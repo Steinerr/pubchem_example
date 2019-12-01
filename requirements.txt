@@ -1,0 +1,3 @@
+pubchempy
+matplotlib
+pandas

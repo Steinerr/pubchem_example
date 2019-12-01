@@ -87,16 +87,16 @@ fig = ax.get_figure()
 fig.savefig('hist_70_full.png')
 
 # Средние значения по колонкам
-print('Averages:')
-print(f'Threshhold 95: {cids_95_df.mean(axis=0)}')
-print(f'Threshhold 80: {cids_80_df.mean(axis=0)}')
-print(f'Threshhold 70: {cids_70_df.mean(axis=0)}')
+print('Averages:\n')
+print(f'Threshhold 95:\n {cids_95_df.mean(axis=0)}')
+print(f'Threshhold 80:\n {cids_80_df.mean(axis=0)}')
+print(f'Threshhold 70:\n {cids_70_df.mean(axis=0)}')
 
 # Медиана
-print('Medians:')
-print(f'Threshhold 95: {cids_95_df.median(axis=0)}')
-print(f'Threshhold 80: {cids_80_df.median(axis=0)}')
-print(f'Threshhold 70: {cids_70_df.median(axis=0)}')
+print('Medians:\n')
+print(f'Threshhold 95:\n {cids_95_df.median(axis=0)}')
+print(f'Threshhold 80:\n {cids_80_df.median(axis=0)}')
+print(f'Threshhold 70:\n {cids_70_df.median(axis=0)}')
 
 # Матрицы рассеяния
 c = pd.plotting.scatter_matrix(cids_95_df, alpha=0.2)
